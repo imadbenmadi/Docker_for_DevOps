@@ -11,6 +11,9 @@ services:
     environment:
       - DEBUG=true
     image: anshuldevops/python_web:2.1
+    stdin_open: true
+    tty: true
+    command: tail -f /dev/null
 
   node_service:
     build:
